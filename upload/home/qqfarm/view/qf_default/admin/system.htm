@@ -1,0 +1,29 @@
+<!--{tpl admin/header}-->
+
+<form id="QSC" onsubmit="return submits();">
+	<dl>
+		<dt>管理列表[格式为: 1,2,3,4...]</dt>
+		<dd><input type="text" name="adminer" value="{:$_QSC['adminer']}" style="width:500px;" /></dd>
+		<dt>好友类型[1:默认好友,2:全站好友]</dt>
+		<dd><input type="text" name="friendType" value="{:$_QSC['friendType']}" style="width:500px;" /></dd>
+		<dt>开启活动[名称请查看QQFarm/source/nc/mission/]</dt>
+		<dd><input type="text" name="missionName" value="{:$_QSC['missionName']}" style="width:500px;" /></dd>
+		<dt>音乐播放器[0:关|1:开]</dt>
+		<dd><input type="text" name="view_player" value="{:$_QSC['view']['player']}" style="width:500px;" /></dd>
+		<dt>隐藏种子[格式为: 1,2,3,4...]</dt>
+		<dd><input type="text" name="hide_seed" value="{:implode($_HIDE['seed'], ',')}" style="width:500px;" /></dd>
+		<dt>隐藏装饰品[格式为：1,2,3,4...]</dt>
+		<dd><input type="text" name="hide_item" value="{:implode($_HIDE['item'], ',')}" style="width:500px;" /></dd>
+	</dl>
+	<input type="submit" value="提 交"><span id="state"></span>
+</form>
+
+<script type="text/javascript">
+	function submits(inputId) {
+		param = $.getForm('#QSC', 1);
+		request('admin.php?mod=system&submit=1', 'state', param);
+		return false;
+	}
+</script>
+
+<!--{tpl admin/footer}-->

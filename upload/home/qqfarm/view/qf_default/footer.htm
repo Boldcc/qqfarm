@@ -1,0 +1,51 @@
+</div>
+
+<img src="index.php?mod=cron" style="width:0;height:0;" />
+
+<script type="text/javascript">
+//滚动公告
+var _msgs = eval('{:qf_getEchoCode($_NOTICE[main])}');
+var _timer, _curIndex = 0, _viewer = $('#msg_viewer');
+var playMsg = function() {
+	if(_msgs.length > 1) {
+		clearInterval(_timer);
+		_viewer.innerHTML = _msgs[_curIndex].text;
+		_viewer.target = '_blank';
+		_timer = setInterval(function() {
+			_viewer.innerHTML = _msgs[_curIndex].text;
+			_viewer.href = _msgs[_curIndex].href;
+			if(++_curIndex == _msgs.length) {
+				_curIndex = 0;
+			}
+			_viewer.target = '_blank';
+		}, 5000);
+	}
+	else {
+		_viewer.innerHTML = _msgs[0].text;
+		_viewer.href = _msgs[0].href;
+		_viewer.target = '_blank';
+	}
+};
+if(typeof(_viewer) != 'undefined' && _viewer) {
+	playMsg();
+}
+//尝试更新父窗口参数
+try {
+	//版本号
+	window.parent.$('qfversion').style.display = 'block';
+	window.parent.$('qfversion').innerHTML = 'QQFarm {:FARM_VERSION}';
+	//播放器
+	var viewPlayer = "{:$_QSC['view']['player']}";
+	if(viewPlayer > 0) {
+		window.parent.$('qfplayer').style.display = 'block';
+	}
+	//大窗口时隐藏公告
+	if(window.parent.curQFWindow == 'myfarm_full') {
+		$('#info').style.display = 'none';
+	}
+} catch(error) {
+}
+</script>
+
+</body>
+</html>

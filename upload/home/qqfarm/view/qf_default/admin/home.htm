@@ -1,0 +1,16 @@
+<!--{tpl admin/header}-->
+
+<div>
+	<strong>服务器参数</strong>
+	<ul>
+		<!--{foreach $farmTest as $key=>$value}-->
+		<!--{php is_bool($value[0]) && $value[0] =  $value[0] ? '支持' : '不支持';}-->
+		<!--{php $value[1] =  $value[1] ? '<span>('.$value[1].')</span>' : '';}-->
+		<li>
+			{:$key} : {:$value[0]} {:$value[1]}
+		</li>
+		<!--{/foreach}-->
+	<ul>
+<div>
+
+<!--{tpl admin/footer}-->

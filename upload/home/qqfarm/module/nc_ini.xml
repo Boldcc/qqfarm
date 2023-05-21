@@ -1,0 +1,874 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<main>
+<postUrl url = "mync.php?" fbRequest = "mod=gb&act=buy" /><!-- http请求地址 -->
+<loading url="module/loading_v_13.swf" />
+<folder url = "module/nc/" />
+<cropsFolder url = "module/nc/crops/" />
+<version value = "" loginurl = "http://www.1a3a.com" />
+<openControl><!-- 功能开放控制 -->
+<item name = "tool" open = "true" /><!-- 道具 -->
+<item name = "pack" open = "false" /><!-- 好友背包 -->
+</openControl>
+<security host="192.168.1.121" port="3333" />
+<moduleList><!-- 模块列表 -->
+<module name="main" url="module/nc/Main_v_42.swf" statusText="加载主文件..." size="167713">
+<material url="module/nc/main/farmui1_v_12.swf" statusText="加载UI素材..." size="238316" />
+<material url="module/nc/main/farmui2_v_4.swf" statusText="加载UI素材（第二部分）..." size="84876" />
+<material url="module/nc/main/commonui_v_4.swf" statusText="加载UI素材（公用部分）..." size="34315" />
+<material url="module/nc/crops/Seeds.swf?v=5" statusText="加载作物素材（第一部分）..." size="121403" />
+<material url="module/nc/crops/Seeds_2.swf?v=4" statusText="加载作物素材（第二部分）..." size="104972" />
+<material url="module/nc/crops/Seeds_3_v_9.swf?v=1" statusText="加载作物素材（第三部分）..." size="15506" />
+<material url="module/nc/crops/Flowers.swf?v=4" statusText="加载花卉素材..." size="49838" />
+<material url="module/nc/main/task.swf?v=42" statusText="加载UI素材（任务部分）..." size="35155" />
+<material url="module/nc/main/NPC3.swf" statusText="加载UI素材（活动部分）..." size="10240" />
+
+</module>
+</moduleList>
+<boards>
+<board id="90001" name="牌子" url="module/nc/farm/diy/board/1.png" />
+<board id="90002" name="牌子" url="module/nc/farm/diy/board/2.png" />
+<board id="90003" name="牌子" url="module/nc/farm/diy/board/3.png" />
+<board id="90004" name="牌子" url="module/nc/farm/diy/board/4.png" />
+<board id="90005" name="牌子" url="module/nc/farm/diy/board/5.png" />
+<board id="90006" name="牌子" url="module/nc/farm/diy/board/6.png" />
+<board id="90007" name="牌子" url="module/nc/farm/diy/board/7.png" />
+<board id="90008" name="牌子" url="module/nc/farm/diy/board/8.png" />
+<board id="90009" name="牌子" url="module/nc/farm/diy/board/9.png" />
+<board id="90010" name="牌子" url="module/nc/farm/diy/board/10.png" />
+<board id="90011" name="牌子" url="module/nc/farm/diy/board/11.png" />
+<board id="90012" name="牌子" url="module/nc/farm/diy/board/12.png" />
+<board id="90013" name="牌子" url="module/nc/farm/diy/board/13.png" />
+<board id="90014" name="牌子" url="module/nc/farm/diy/board/14.png" />
+<board id="90015" name="牌子" url="module/nc/farm/diy/board/15.png" />
+</boards>
+
+<crops>
+	<crop id="200" isFlower="1"  offsetX="0" offsetY="0" seed="Seed" harvestNum="5"  >
+<insect position="0,0,0,0,0,0|100,-50,78,-19,125,-30|100,-50,80,-24,125,-30|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,花蕾,盛开,已成熟"/>
+<cropGrow value="18000,39600,61200,86400,111600,2000000000" />
+<tip>小贴士：</tip>
+<name>红种子a</name>
+</crop>	
+		<crop id="1"   offsetX="35" offsetY="-60" seed="Seed" harvestNum="2"  >
+<insect position="0,0,0,0,0,0|50,10,65,-30,110,-2|50,10,65,-30,110,-2|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="14400,28800,46800,64800,86400,2000000000" />
+<tip>小贴士：草莓(英文：strawberry)外观呈浆果状圆体或心形，鲜美红嫩，果肉多汁，酸甜可口，香味浓郁，被称为水果皇后。</tip>
+<name>草莓</name>
+</crop>	
+		<crop id="2"   offsetX="35" offsetY="-63" seed="Seed" harvestNum="1"  >
+<insect position="0,0,0,0,0,0|74,8,92,2,109,33|74,8,92,2,109,33|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,成熟,成熟,已成熟"/>
+<cropGrow value="7200,14400,25200,36000,36000,2000000000" />
+<tip>小贴士：白萝卜(英文：radish)是一种非常常见的蔬菜，生食熟食均可，其味略带辛辣味。白萝卜不能与人参、西洋参一起吃。</tip>
+<name>白萝卜</name>
+</crop>	
+		<crop id="3"   offsetX="35" offsetY="-63" seed="Seed" harvestNum="1" isFood="1" isLock="1">
+<insect position="0,0,0,0,0,0|74,8,92,2,109,33|74,8,92,2,109,33|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,成熟,成熟,已成熟"/>
+<cropGrow value="7200,18000,32400,46800,46800,2000000000" />
+<tip>小贴士：胡萝卜(英文：carrot)是大自然的红宝石，营养很丰富。胡萝卜素可以预防心脏病和癌症，有益肝明目的作用哦！</tip>
+<name>胡萝卜</name>
+</crop>	
+		<crop id="4"   offsetX="0" offsetY="0" seed="Seed" harvestNum="1"  >
+<insect position="0,0,0,0,0,0|56,-17,92,-61,115,-11|56,-17,92,-61,115,-11|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="7200,14400,25200,36000,50400,2000000000" />
+<tip>小贴士：玉米(英文：corn)是世界分布最广的粮食作物，在许多地区作为主要食物，纤维素含量很高，具有长寿、美容作用。</tip>
+<name>玉米</name>
+</crop>	
+		<crop id="5"   offsetX="0" offsetY="0" seed="Seed" harvestNum="1"  >
+<insect position="0,0,0,0,0,0|45,0,99,-10,129,-24|45,-5,99,-15,129,-29|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="7200,14400,25200,39600,54000,2000000000" />
+<tip>小贴士：土豆(英文：potato)又叫马铃薯，土豆除了直接食用以外，土豆含有大量淀粉以及蛋白质、B族维生素、维生素C。</tip>
+<name>土豆</name>
+</crop>	
+		<crop id="6"   offsetX="0" offsetY="0" seed="Seed" harvestNum="1"  >
+<insect position="0,0,0,0,0,0|64,-4,45,-19,103,-17|64,-3,48,-17.5,128,-6|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="7200,18000,28800,43200,57600,2000000000" />
+<tip>小贴士：茄子(英文：aubergine)中维生素P的含量很高，保护心血管，还是抗癌高手。拍照时我们还喜欢一起喊茄子微笑。</tip>
+<name>茄子</name>
+</crop>	
+		<crop id="7"   offsetX="0" offsetY="0" seed="Seed" harvestNum="1"  >
+<insect position="0,0,0,0,0,0|100,-50,78,-19,125,-30|100,-50,80,-24,125,-30|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="7200,18000,32400,46800,61200,2000000000" />
+<tip>小贴士：番茄(英文：tomato)含有丰富的胡萝卜素、维生素C和B族维生素，是维生素C含量蔬菜之冠哦！还有惊人的减肥效果。</tip>
+<name>番茄</name>
+</crop>	
+		<crop id="8"   offsetX="0" offsetY="0" seed="Seed" harvestNum="1"  >
+<insect position="0,0,0,0,0,0|50,-13,85,-51,107,1|50,-13,85,-51,107,1|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="10800,21600,32400,46800,64800,2000000000" />
+<tip>小贴士：豌豆(英文：pea)富含人体所需的各种营养物质，尤其是含有优质蛋白质，可以提高机体的抗病能力和康复能力。</tip>
+<name>豌豆</name>
+</crop>	
+		<crop id="9"   offsetX="0" offsetY="0" seed="Seed" harvestNum="1"  >
+<insect position="0,0,0,0,0,0|65,13,92,-11,120,-15|65,13,92,-11,120,-15|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="10800,25200,39600,54000,72000,2000000000" />
+<tip>小贴士：辣椒(英文：chili)味道爽口刺激，很多人的最爱哦！不仅可以健胃助消化，还能燃烧脂肪，具有减肥的功效。</tip>
+<name>辣椒</name>
+</crop>	
+		<crop id="10"   offsetX="0" offsetY="0" seed="Seed" harvestNum="1"  >
+<insect position="0,0,0,0,0,0|65,13,92,-11,120,-15|65,13,92,-11,120,-15|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="10800,25200,43200,61200,79200,2000000000" />
+<tip>小贴士：南瓜(英文：pumpkin)含有多种营养成分，能润肺益气，治咳止喘。味道香甜，还有重金属解毒和美容等作用。</tip>
+<name>南瓜</name>
+</crop>	
+		<crop id="11"   offsetX="0" offsetY="0" seed="Seed" harvestNum="2"  >
+<insect position="0,0,0,0,0,0|65,13,92,-11,120,-15|65,13,92,-11,120,-15|0,0,0,0,0,0" />
+<nextText value="幼枝,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="14400,28800,43200,57600,75600,2000000000" />
+<tip>小贴士：苹果(英文：apple)富含多种维生索、矿物质等构成大脑所必须的营养成分，能增加记忆力，还能美容美体。苹果一般嫁接种植，生长第一阶段为嫁接的幼枝。</tip>
+<name>苹果</name>
+</crop>	
+		<crop id="13"   offsetX="0" offsetY="0" seed="Seed" harvestNum="3"  >
+<insect position="0,0,0,0,0,0|65,-13,92,-26,120,-30|65,-13,92,-26,120,-30|0,0,0,0,0,0" />
+<nextText value="幼枝,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="28800,61200,93600,129600,165600,2000000000" />
+<tip>小贴士：葡萄(英文：grape)所富含的葡萄糖可以很快的被人吸收，人体出现低血糖时喝葡萄汁就能很快使症状缓解。葡萄一般插扦种植，生长第一阶段为幼枝。</tip>
+<name>葡萄</name>
+</crop>	
+		<crop id="14"   offsetX="0" offsetY="0" seed="Seed" harvestNum="2"  >
+<insect position="0,0,0,0,0,0|105,44,70,13,119,13|105,44,70,13,119,13|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="14400,32400,54000,75600,100800,2000000000" />
+<tip>小贴士：西瓜(英文：watermelon)顾名思义，是西域传来的瓜。它全身都是宝，果肉清甜美味，果皮可腌制成密饯，种子还可榨油。</tip>
+<name>西瓜</name>
+</crop>	
+		<crop id="15"   offsetX="0" offsetY="0" seed="Seed" harvestNum="2"  >
+<insect position="0,0,0,0,0,0|63,-6,80,-30,111,-13|63,-6,80,-30,111,-13|0,0,0,0,0,0" />
+<nextText value="幼芽,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="18000,39600,61200,86400,111600,2000000000" />
+<tip>小贴士：香蕉(英文：banana)欧洲人因为它能解除忧郁而称它为“快乐水果”，也是女孩们钟爱的减肥佳果。香蕉一般切块种植，生长第一阶段为幼芽。</tip>
+<name>香蕉</name>
+</crop>	
+		<crop id="16"    seed="Seed" harvestNum="7"  >
+<insect position="" />
+<nextText value="幼枝,发芽,小叶子,大叶子,开花,成熟"/>
+<cropGrow value="28800,46800,64800,86400,100800,2000000000" />
+<tip>小贴士：</tip>
+<name>菠萝蜜</name>
+</crop>	
+		<crop id="17"    seed="Seed" harvestNum="7"  >
+<insect position="" />
+<nextText value="幼枝,发芽,小叶子,大叶子,开花,成熟"/>
+<cropGrow value="18000,36000,54000,72000,90000,2000000000" />
+<tip>小贴士：</tip>
+<name>黑布仑</name>
+</crop>	
+		<crop id="18"   offsetX="0" offsetY="0" seed="Seed" harvestNum="2"  >
+<insect position="0,0,0,0,0,0|71,-24,69,-63,116,-53|71,-24,69,-63,116,-53|0,0,0,0,0,0" />
+<nextText value="种子,发芽,开花,小叶子,大叶子,成熟,已成熟"/>
+<cropGrow value="28800,57600,86400,118800,151200,2000000000" />
+<tip>小贴士：桃子(英文：peach)先开花，后长叶子，在全世界有三千多个品种，味道鲜美，营养丰富，有补益气血、养阴生津的作用。</tip>
+<name>桃子</name>
+</crop>	
+		<crop id="19"   offsetX="0" offsetY="0" seed="Seed" harvestNum="3"  >
+<insect position="0,0,0,0,0,0|60,-7,80,-26,105,-10|60,-7,80,-26,105,-10|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="25200,50400,75600,104400,133200,2000000000" />
+<tip>小贴士：橙子(英文：orange)酸甜可口，生津止渴，有开胃下气的功效；切片敷面还可以祛除面部色素，治疗黄褐斑。</tip>
+<name>橙子</name>
+</crop>	
+		<crop id="20"    seed="Seed" harvestNum="7"  >
+<insect position="" />
+<nextText value="幼枝,发芽,小叶子,大叶子,开花,成熟"/>
+<cropGrow value="21600,39600,61200,82800,104400,2000000000" />
+<tip>小贴士：</tip>
+<name>乌饭子</name>
+</crop>	
+		<crop id="21"    seed="Seed" harvestNum="7"  >
+<insect position="" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟"/>
+<cropGrow value="28800,57600,86400,115200,144000,2000000000" />
+<tip>小贴士：</tip>
+<name>可可豆</name>
+</crop>	
+		<crop id="22"    seed="Seed" harvestNum="7"  >
+<insect position="" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟"/>
+<cropGrow value="25200,54000,75600,97200,115200,2000000000" />
+<tip>小贴士：</tip>
+<name>鳄梨</name>
+</crop>	
+		<crop id="23"   offsetX="0" offsetY="0" seed="Seed" harvestNum="3"  >
+<insect position="0,0,0,0,0,0|55,-30,92,-11,120,-15|55,-30,92,-11,120,-15|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="36000,72000,108000,147600,187200,2000000000" />
+<tip>小贴士：石榴(英文：pomegranate)原产波斯一带，花语是成熟美丽。石榴含有丰富的营养，但不可与西红柿、螃蟹一起吃。</tip>
+<name>石榴</name>
+</crop>	
+		<crop id="24"    seed="Seed" harvestNum="7"  >
+<insect position="" />
+<nextText value="幼苗,发芽,小叶子,大叶子,开花,成熟"/>
+<cropGrow value="18000,39600,64800,93600,126000,2000000000" />
+<tip>小贴士：</tip>
+<name>莲雾</name>
+</crop>	
+		<crop id="25"    seed="Seed" harvestNum="3"  >
+<insect position="0,0,0,0,0,0|67,-16,86,-53,100,-25|67,-16,86,-53,100,-25|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,长枝,成苗"/>
+<cropGrow value="18000,43200,72000,97200,126000,2000000000" />
+<tip>小贴士：银杏树（英文：maidenhair tree）是世界上最古老的树种之一，成年银杏树高大挺拔，叶似扇形，但其生长较慢，寿命极长，可达上千岁。</tip>
+<name>银杏树苗</name>
+</crop>	
+		<crop id="26"   offsetX="0" offsetY="0" seed="Seed" harvestNum="3"  >
+<insect position="0,0,0,0,0,0|54,-5,87,-27,130,-21|54,-5,87,-27,130,-21|0,0,0,0,0,0" />
+<nextText value="幼枝,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="39600,82800,126000,172800,219600,2000000000" />
+<tip>小贴士：柚子(英文：grapefruit)味道酸甜，略带苦味，含有丰富的维生索C及大量其他营养索，是医学界公认的最具食疗效果的水果。柚子一般嫁接种植，生长第一阶段为嫁接的幼枝。</tip>
+<name>柚子</name>
+</crop>	
+		<crop id="27"   offsetX="0" offsetY="0" seed="Seed" harvestNum="3"  >
+<insect position="0,0,0,0,0,0|68,23,95,25,126,8|68,23,95,25,126,8|0,0,0,0,0,0" />
+<nextText value="幼芽,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="43200,90000,136800,183600,230400,2000000000" />
+<tip>小贴士：菠萝(英文：pineapple)营养丰富，香甜可口。含有一种“菠萝酶”，可以增进食欲，但也有副作用，所以要适量食用。菠萝一般冠芽种植，生长第一阶段为幼芽。</tip>
+<name>菠萝</name>
+</crop>	
+		<crop id="28"    seed="Seed" harvestNum="4"  >
+<insect position="" />
+<nextText value=""/>
+<cropGrow value="28800,61200,100800,140400,180000,2000000000" />
+<tip></tip>
+<name>神秘种子</name>
+</crop>	
+		<crop id="29"   offsetX="0" offsetY="0" seed="Seed" harvestNum="4"  >
+<insect position="0,0,0,0,0,0|61,-52,96,-30,120,-12|61,-52,96,-30,120,-12|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="36000,75600,115200,154800,198000,2000000000" />
+<tip>小贴士：椰子(英文：coconut)是海南特产，无污染，椰汁可以作为饮料，椰壳可以做成工艺品，全身是宝。体内热盛的人不宜常吃椰子。</tip>
+<name>椰子</name>
+</crop>	
+		<crop id="30"    seed="Seed" harvestNum="4"  >
+<insect position="" />
+<nextText value=""/>
+<cropGrow value="32400,72000,115200,158400,205200,2000000000" />
+<tip></tip>
+<name>神秘种子</name>
+</crop>	
+		<crop id="31"   offsetX="0" offsetY="0" seed="Seed" harvestNum="4"  >
+<insect position="0,0,0,0,0,0|65,-5,80,-35,120,-24|65,-5,80,-35,120,-24|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="39600,82800,126000,172800,219600,2000000000" />
+<tip>小贴士：葫芦（英文：gourd）有很多传说故事，葫芦娃很熟悉吧？葫芦果实成熟后经一定处理可作为容器，如酒壶、水瓢、观赏品等。</tip>
+<name>葫芦</name>
+</crop>	
+		<crop id="32"    seed="Seed" harvestNum="4"  >
+<insect position="" />
+<nextText value=""/>
+<cropGrow value="43200,90000,136800,183600,234000,2000000000" />
+<tip></tip>
+<name>神秘种子</name>
+</crop>	
+		<crop id="33"   offsetX="0" offsetY="0" seed="Seed" harvestNum="4"  >
+<insect position="0,0,0,0,0,0|65,-15,80,-45,120,-34|65,-15,80,-45,120,-34|0,0,0,0,0,0" />
+<nextText value="幼枝,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="46800,97200,147600,198000,252000,2000000000" />
+<tip>小贴士：火龙果(英文：pitaya)也称“吉祥果”，是营养丰富、功能独特、低热量、高纤维的水果，可以防止“都市富贵病”的蔓延。火龙果一般插枝种植，生长第一阶段为幼枝。</tip>
+<name>火龙果</name>
+</crop>	
+		<crop id="34"   offsetX="0" offsetY="0" seed="Seed" harvestNum="4"  >
+<insect position="0,0,0,0,0,0|65,-5,80,-35,120,-24|65,-5,80,-35,120,-24|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="50400,100800,151200,205200,259200,2000000000" />
+<tip>小贴士：樱桃(英文：cherry)也叫车厘子，成熟时颜色鲜红，酸甜多汁。可以用来酿酒，樱桃含铁量位于各种水果之首，可以抗贫血。</tip>
+<name>樱桃</name>
+</crop>	
+		<crop id="35"   offsetX="0" offsetY="0" seed="Seed" harvestNum="4"  >
+<insect position="0,0,0,0,0,0|65,-5,80,-35,120,-24|65,-5,80,-35,120,-24|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="54000,108000,165600,219600,277200,2000000000" />
+<tip>小贴士：荔枝(英文：litchi)富含维生素防止雀斑的发生，令皮肤更加光滑。对大脑组织也有很好的补养作用。</tip>
+<name>荔枝</name>
+</crop>	
+		<crop id="36"    seed="Seed" harvestNum="4"  >
+<insect position="" />
+<nextText value=""/>
+<cropGrow value="57600,115200,172800,230400,291600,2000000000" />
+<tip></tip>
+<name>神秘种子</name>
+</crop>	
+		<crop id="38"   offsetX="0" offsetY="0" seed="Seed" harvestNum="5"  >
+<insect position="0,0,0,0,0,0|63,-40,85,-74,106,-40|63,-40,85,-74,106,-40|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="28800,61200,93600,129600,165600,2000000000" />
+<tip>小贴士：木瓜(英文：papaya)原产我国西南地区，生吃能舒缓咽喉不适，对感冒咳痰、便秘、慢性气管炎等亦有帮助。</tip>
+<name>木瓜</name>
+</crop>	
+		<crop id="39"   offsetX="0" offsetY="0" seed="Seed" harvestNum="5"  >
+<insect position="0,0,0,0,0,0|56,-20,80,-58,104,-27|56,-20,80,-58,104,-27|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="28800,61200,93600,129600,165600,2000000000" />
+<tip>小贴士：杨桃(英文：carambola)的原产地是中国，是久负盛名的岭南佳果之一。因横切面如五角星，故国外又称之为“星梨”( Star fruit)。</tip>
+<name>杨桃</name>
+</crop>	
+		<crop id="40"   offsetX="0" offsetY="0" seed="Seed" harvestNum="1" isFood="1" isLock="1">
+<insect position="0,0,0,0,0,0|65,-5,80,-35,120,-24|65,-5,80,-35,120,-24|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,成熟,成熟,已成熟"/>
+<cropGrow value="7200,14400,21600,28800,28800,2000000000" />
+<tip>小贴士：牧草(英文：pasture)是作为家畜饲料而栽培的植物，牧场里的可爱动物们可是很喜欢它呢！多种一些吧！</tip>
+<name>牧草</name>
+</crop>	
+		<crop id="41" isFlower="1"  offsetX="0" offsetY="0" seed="Seed" harvestNum="1"  >
+<insect position="0,0,0,0,0,0|65,-5,80,-35,120,-24|65,-5,80,-35,120,-24|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,花蕾,盛开,已成熟"/>
+<cropGrow value="10800,21600,32400,46800,64800,2000000000" />
+<tip>小贴士：红玫瑰(英文：red rose)代表热情真爱，一般带刺。玫瑰花瓣可以加工食用，制作成玫瑰茶或玫瑰花糕，也可以制作成香料。</tip>
+<name>红玫瑰</name>
+</crop>	
+		<crop id="42"   offsetX="0" offsetY="0" seed="Seed" harvestNum="5"  >
+<insect position="0,0,0,0,0,0|65,-5,80,-35,120,-24|65,-5,80,-35,120,-24|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="18000,39600,61200,86400,111600,2000000000" />
+<tip>小贴士：柠檬(英文：lemon)属芸香科柑橘属常绿小乔木，是世界上最有药用价值的水果之一，它富含维生素C、柠檬酸、苹果酸、高量钾元素和低量钠元素等，对人体十分有益。</tip>
+<name>柠檬</name>
+</crop>	
+		<crop id="43"   offsetX="0" offsetY="0" seed="Seed" harvestNum="3"  >
+<insect position="0,0,0,0,0,0|100,-50,78,-19,125,-30|100,-50,80,-24,125,-30|0,0,0,0,0,0" />
+<nextText value="幼枝,发芽,小叶子,大叶子,初熟,成熟,已成熟"/>
+<cropGrow value="28800,57600,86400,118800,151200,2000000000" />
+<tip>小贴士：</tip>
+<name>无花果</name>
+</crop>	
+		<crop id="44"   offsetX="0" offsetY="0" seed="Seed" harvestNum="3"  >
+<insect position="0,0,0,0,0,0|81,7,90,-43,109,-3|81,7,90,-43,109,-3|0,0,0,0,0,0" />
+<nextText value="幼株,长枝,开花,小叶子,大叶子,结果,已成熟"/>
+<cropGrow value="18000,39600,61200,86400,111600,2000000000" />
+<tip>小贴士：丝瓜(英文：towel gourd)中含防止皮肤老化的B族维生素，增白皮肤的维生素C等成分，是不可多得的美容佳品。丝瓜一般插株种植，生长第一阶段为幼苗。</tip>
+<name>丝瓜</name>
+</crop>	
+		<crop id="45"   offsetX="0" offsetY="0" seed="Seed" harvestNum="4"  >
+<insect position="0,0,0,0,0,0|100,-50,78,-19,125,-30|100,-50,80,-24,125,-30|0,0,0,0,0,0" />
+<nextText value="幼枝,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="28800,61200,93600,129600,165600,2000000000" />
+<tip>小贴士：猕猴桃(英文：kiwifruit)味甘酸而寒，有解热、止渴、健胃的功效。它的维生素C含量在水果中名列前茅，被誉为“维C之王”。猕猴桃一般插枝种植，生长第一阶段为幼枝。</tip>
+<name>猕猴桃</name>
+</crop>	
+		<crop id="46"   offsetX="0" offsetY="0" seed="Seed" harvestNum="3"  >
+<insect position="0,0,0,0,0,0|65,-5,80,-35,120,-24|65,-5,80,-35,120,-24|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="18000,39600,61200,86400,111600,2000000000" />
+<tip>小贴士：传说中的爱心果(英文：benevolence fruit)，专为腾讯“月捐”网友而绽放！爱心无价，爱心果如金子般闪亮，美好生活全因有你！</tip>
+<name>爱心果</name>
+</crop>	
+		<crop id="47"   offsetX="0" offsetY="0" seed="Seed" harvestNum="2"  >
+<insect position="0,0,0,0,0,0|63,-7,85,-36,106,-15|63,-7,85,-36,106,-15|0,0,0,0,0,0" />
+<nextText value="幼苗,发芽,幼苗,分叶,伸长,成熟,已成熟"/>
+<cropGrow value="18000,39600,61200,86400,111600,2000000000" />
+<tip>小贴士：甘蔗(英文：cane)含有丰富的糖分、水份以及对人体新陈代谢非常有益的各种维生素等物质。新植甘蔗采用栽种甘蔗苗繁殖，生长周期为：甘蔗苗、发芽、幼苗、分叶、伸长、成熟</tip>
+<name>甘蔗</name>
+</crop>	
+		<crop id="48"   offsetX="0" offsetY="0" seed="Seed" harvestNum="5"  >
+<insect position="0,0,0,0,0,0|65,-5,80,-35,120,-24|65,-5,80,-35,120,-24|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="18000,39600,61200,86400,111600,2000000000" />
+<tip>小贴士：杨梅(英文：waxberry)营养价值高，是天然的绿色保健食品。果实成熟时丹实点点，烂漫可爱，是优良的观果树种。</tip>
+<name>杨梅</name>
+</crop>	
+		<crop id="49"   offsetX="0" offsetY="0" seed="Seed" harvestNum="4"  >
+<insect position="0,0,0,0,0,0|54,7,78,-28,98,-3|54,7,78,-28,98,-3|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="28800,57600,86400,118800,151200,2000000000" />
+<tip>小贴士：花生(英文：peanut)滋养补益，有助于延年益寿，所以民间又称之为“长生果”，并且和黄豆一同被誉为“植物肉”，“素中之荤”。</tip>
+<name>花生</name>
+</crop>	
+		<crop id="50"   offsetX="0" offsetY="0" seed="Seed" harvestNum="3"  >
+<insect position="0,0,0,0,0,0|64,11,87,-19,104,3|64,11,87,-19,104,3|0,0,0,0,0,0" />
+<nextText value="原基,菇蕾,幼菇,初熟,成熟,成熟,已成熟"/>
+<cropGrow value="25200,50400,79200,108000,108000,2000000000" />
+<tip>小贴士：蘑菇(英文：mushroom)种类繁多，可食用蘑菇是理想的天然食品和多功能食品，对降低血压有明显效果，还可提高身体免疫力。蘑菇生长周期为：原基、菇蕾、幼菇、初熟、成熟。</tip>
+<name>蘑菇</name>
+</crop>	
+		<crop id="51"   offsetX="0" offsetY="0" seed="Seed" harvestNum="1"  >
+<insect position="0,0,0,0,0,0|54,-5,79,-44,105,-23|54,-5,79,-44,105,-23|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="7200,18000,28800,43200,57600,2000000000" />
+<tip>小贴士：红枣(英文：red jujube)含有蛋白质、脂肪、糖类、有机酸、维生素A、维生素C等丰富的营养成份，对病后体虚的人有良好的滋补作用。</tip>
+<name>红枣</name>
+</crop>	
+		<crop id="52"   offsetX="0" offsetY="0" seed="Seed" harvestNum="4"  >
+<insect position="0,0,0,0,0,0|100,-50,78,-19,125,-30|100,-50,80,-24,125,-30|0,0,0,0,0,0" />
+<nextText value="菌种,发菌,出菇,幼菇,初熟,成熟,已成熟"/>
+<cropGrow value="28800,57600,86400,118800,151200,2000000000" />
+<tip>小贴士：</tip>
+<name>金针菇</name>
+</crop>	
+		<crop id="53"   offsetX="0" offsetY="0" seed="Seed" harvestNum="5"  >
+<insect position="0,0,0,0,0,0|58,5,87,-35,104,-4|58,5,87,-35,104,-4|0,0,0,0,0,0" />
+<nextText value="幼枝,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="18000,39600,61200,86400,111600,2000000000" />
+<tip>小贴士：桂圆(英文：longan)亦称龙眼，味甘、性温，含有多种营养物质，有补血安神，健脑益智，补养心脾的功效。桂圆一般采用嫁接的方式种植，生长第一阶段为幼枝。</tip>
+<name>桂圆</name>
+</crop>	
+		<crop id="54"   offsetX="0" offsetY="0" seed="Seed" harvestNum="4"  >
+<insect position="0,0,0,0,0,0|100,-50,78,-19,125,-30|100,-50,80,-24,125,-30|0,0,0,0,0,0" />
+<nextText value="幼枝,长枝,开花,小叶子,大叶子,结果,已成熟"/>
+<cropGrow value="21600,43200,64800,90000,115200,2000000000" />
+<tip>小贴士：梨(英文：pear)酸甜可口，富含多种维生素，对人体健康有重要作用。梨树一般嫁接种植，并且先花后叶，故梨的生长周期为：幼枝，长枝，开花，小叶子，大叶子，成熟。</tip>
+<name>梨</name>
+</crop>	
+		<crop id="55"   offsetX="0" offsetY="0" seed="Seed" harvestNum="4"  >
+<insect position="0,0,0,0,0,0|54,-5,79,-44,105,-23|54,-5,79,-44,105,-23|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="28800,57600,86400,118800,151200,2000000000" />
+<tip>小贴士：枇杷(英文：loquat)果肉柔软多汁、酸甜适度、味道鲜美，被誉为“果中之皇”。 枇杷果实及叶有抑制流感病毒作用，常吃还可以预防感冒。</tip>
+<name>枇杷</name>
+</crop>	
+		<crop id="56"   offsetX="0" offsetY="0" seed="Seed" harvestNum="5"  >
+<insect position="0,0,0,0,0,0|66,-11,80,-37,118,-16|66,-11,80,-37,118,-16|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="18000,39600,61200,86400,111600,2000000000" />
+<tip>小贴士：哈密瓜(英文：cantaloupe)有清凉消暑，除烦热，生津止渴的作用，是夏季解暑的佳品。同时它对人体造血机能有显著的促进作用，可以用来作为贫血的食疗之品。</tip>
+<name>哈密瓜</name>
+</crop>	
+		<crop id="57"   offsetX="0" offsetY="0" seed="Seed" harvestNum="5"  >
+<insect position="0,0,0,0,0,0|57,-9,64,-54,108,-14|57,-9,64,-54,108,-14|0,0,0,0,0,0" />
+<nextText value="幼枝,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="18000,39600,61200,86400,111600,2000000000" />
+<tip>小贴士：芒果(英文：mango)果实含有糖、蛋白质、粗纤维等营养素，同时它所含有的维生素A成分特别高，是所有水果中少见的。芒果一般采用嫁接的方式种植，生长第一阶段为幼枝。</tip>
+<name>芒果</name>
+</crop>	
+		<crop id="58"   offsetX="0" offsetY="0" seed="Seed" harvestNum="5"  >
+<insect position="0,0,0,0,0,0|57,-14,80,-48,104,-16|57,-14,80,-48,104,-16|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="18000,39600,61200,86400,111600,2000000000" />
+<tip>小贴士：榴莲(英文：durian)被誉为“水果之王”。它含有丰富的蛋白质和脂类，对机体有很好的补养作用，是良好的果品类营养来源。</tip>
+<name>榴莲</name>
+</crop>	
+		<crop id="59"   offsetX="0" offsetY="0" seed="Seed" harvestNum="1"  >
+<insect position="0,0,0,0,0,0|66,23,86,-10,111,15|66,0,87,-28,105,-2|0,0,0,0,0,0" />
+<nextText value="种子,发芽,幼苗,成株,卷心,成熟,已成熟"/>
+<cropGrow value="7200,14400,25200,36000,50400,2000000000" />
+<tip>小贴士：大白菜(英文：Chinese cabbage)是我国原产蔬菜，有悠久的栽培历史，含有丰富的粗纤维，能润肠排毒、帮助消化，对预防肠癌有良好作用。大白菜的生长周期为：发芽、幼苗、成株、卷心、成熟。</tip>
+<name>大白菜</name>
+</crop>	
+		<crop id="60"   offsetX="0" offsetY="0" seed="Seed" harvestNum="1"  >
+<insect position="0,0,0,0,0,0|60,-5,87,-27,112,-2|60,-5,87,-27,112,-2|0,0,0,0,0,0" />
+<nextText value="种子,幼苗,秧苗,幼穗,开花,成熟,已成熟"/>
+<cropGrow value="7200,14400,25200,36000,50400,2000000000" />
+<tip>小贴士：水稻(英文：paddy)是一年生禾本科植物。稻谷通过去除稻壳加工等方法还能成为稻米、胚芽米、白米等人类的主要粮食。水稻一般采用在水田中插苗的方法种植，生长周期为：幼苗、秧苗、幼穗、开花、成熟。</tip>
+<name>水稻</name>
+</crop>	
+		<crop id="61"   offsetX="0" offsetY="0" seed="Seed" harvestNum="1"  >
+<insect position="0,0,0,0,0,0|60,-5,87,-27,112,-2|60,-5,87,-27,112,-2|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,幼穗,成熟,已成熟"/>
+<cropGrow value="7200,14400,25200,36000,50400,2000000000" />
+<tip>小贴士：小麦(英文：wheat)富含淀粉、蛋白质、脂肪、矿物质、钙、铁、硫胺素、核黄素、烟酸及维生素A等。经磨制加工后，即成为面粉，也称小麦粉。小麦的生长周期为：发芽、小叶子、大叶子、幼穗、成熟。</tip>
+<name>小麦</name>
+</crop>	
+		<crop id="62"   offsetX="0" offsetY="0" seed="Seed" harvestNum="2"  >
+<insect position="0,0,0,0,0,0|64,13,89,-3,114,12|47,4,87,-27,117,2|0,0,0,0,0,0" />
+<nextText value="种子,发芽,一叶,两叶,三叶,成熟,已成熟"/>
+<cropGrow value="14400,28800,46800,64800,82800,2000000000" />
+<tip>小贴士：四叶草（英文：clover）代表真爱、健康、名誉、幸福，专为校友用户量身打造的炫丽种子。四叶草生长周期为：种子，发芽，一叶，两叶，三叶，成熟。</tip>
+<name>四叶草</name>
+</crop>	
+		<crop id="63"   offsetX="0" offsetY="0" seed="Seed" harvestNum="5"  >
+<insect position="0,0,0,0,0,0|42,11,87,-12,124,-11|42,11,87,-12,124,-11|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="18000,39600,61200,86400,111600,2000000000" />
+<tip>小贴士：苦瓜(英文：balsam pear)又称凉瓜，为葫芦科植物，具有清热消暑、养血益气、补肾健脾、滋肝明目的功效。</tip>
+<name>苦瓜</name>
+</crop>	
+		<crop id="64"   offsetX="0" offsetY="0" seed="Seed" harvestNum="1"  >
+<insect position="0,0,0,0,0,0|100,-50,78,-19,125,-30|100,-50,80,-24,125,-30|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,成熟,成熟,已成熟"/>
+<cropGrow value="7200,14400,25200,25200,39600,2000000000" />
+<tip>小贴士：</tip>
+<name>大葱</name>
+</crop>	
+		<crop id="66"   offsetX="0" offsetY="0" seed="Seed" harvestNum="1"  >
+<insect position="0,0,0,0,0,0|100,-50,78,-19,125,-30|100,-50,80,-24,125,-30|0,0,0,0,0,0" />
+<nextText value="幼芽,幼苗,小叶子,大叶子,成熟,成熟,已成熟"/>
+<cropGrow value="7200,14400,25200,25200,39600,2000000000" />
+<tip>小贴士：</tip>
+<name>鲜姜</name>
+</crop>	
+		<crop id="67"   offsetX="0" offsetY="0" seed="Seed" harvestNum="4"  >
+<insect position="0,0,0,0,0,0|49,7,78,-20,118,2|49,7,78,-20,118,2|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="21600,43200,68400,97200,126000,2000000000" />
+<tip>小贴士：香瓜(英文：muskmelon)又称甘瓜或甜瓜，因其清香袭人而得名，是夏令消暑瓜果，其营养价值可与西瓜媲美。</tip>
+<name>香瓜</name>
+</crop>	
+		<crop id="68"   offsetX="0" offsetY="0" seed="Seed" harvestNum="5"  >
+<insect position="0,0,0,0,0,0|48,-7,94,-47,134,-14|48,-7,94,-47,134,-14|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="18000,39600,61200,86400,111600,2000000000" />
+<tip>小贴士：冬瓜（英文：wax gourd）属葫芦科作物，内含大量的维生素、矿物质和蛋白质，对护肤美白有很好的作用。</tip>
+<name>冬瓜</name>
+</crop>	
+		<crop id="69"   offsetX="0" offsetY="0" seed="Seed" harvestNum="4"  >
+<insect position="0,0,0,0,0,0|74,12,86,-2,98,20|59,10,86,-21,100,16|0,0,0,0,0,0" />
+<nextText value="种子,发芽,幼苗,莲座期,成株期,成熟,已成熟"/>
+<cropGrow value="36000,75600,115200,154800,198000,2000000000" />
+<tip>小贴士：莴笋（英文：lettuce）又叫“莴苣”，含有多种维生素和矿物质，常吃可增强胃液和消化液的分泌。</tip>
+<name>莴笋</name>
+</crop>	
+		<crop id="70"   offsetX="0" offsetY="0" seed="Seed" harvestNum="2"  >
+<insect position="0,0,0,0,0,0|71,3,81,-28,113,-3|71,3,81,-28,113,-3|0,0,0,0,0,0" />
+<nextText value="种子,发芽,细苗,分枝,开花,成熟,已成熟"/>
+<cropGrow value="14400,32400,54000,75600,100800,2000000000" />
+<tip>小贴士：黄豆（英文：soybean）有“豆中之王”之称，被人们叫做“植物肉”、“绿色的乳牛”，营养价值丰富。</tip>
+<name>黄豆</name>
+</crop>	
+		<crop id="71"   offsetX="0" offsetY="0" seed="Seed" harvestNum="1"  >
+<insect position="0,0,0,0,0,0|100,-50,78,-19,125,-30|100,-50,80,-24,125,-30|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,成熟,成熟,已成熟"/>
+<cropGrow value="7200,14400,25200,25200,39600,2000000000" />
+<tip>小贴士：</tip>
+<name>小白菜</name>
+</crop>	
+		<crop id="72"   offsetX="0" offsetY="0" seed="Seed" harvestNum="3"  >
+<insect position="0,0,0,0,0,0|61,-9,84,-35,109,-10|61,-9,84,-35,109,-10|0,0,0,0,0,0" />
+<nextText value="幼苗,发芽,开花,小叶子,大叶子,成熟,已成熟"/>
+<cropGrow value="28800,61200,93600,129600,165600,2000000000" />
+<tip>小贴士：榛子(英文：filbert)营养丰富，果仁中含有丰富的蛋白质、胡萝卜素、维生素等，是松鼠爱吃的食物之一。榛子先开花，后长叶子，一般嫁接种植，生长第一阶段为幼苗。</tip>
+<name>榛子</name>
+</crop>	
+		<crop id="73"   offsetX="0" offsetY="0" seed="Seed" harvestNum="1"  >
+<insect position="0,0,0,0,0,0|100,-50,78,-19,125,-30|100,-50,80,-24,125,-30|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,成熟,成熟,已成熟"/>
+<cropGrow value="10800,25200,43200,43200,61200,2000000000" />
+<tip>小贴士：</tip>
+<name>菠菜</name>
+</crop>	
+		<crop id="74"   offsetX="0" offsetY="0" seed="Seed" harvestNum="5"  >
+<insect position="0,0,0,0,0,0|62,-12,83,-48,109,-19|62,-12,83,-48,109,-19|0,0,0,0,0,0" />
+<nextText value="幼苗,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="18000,39600,61200,86400,111600,2000000000" />
+<tip>小贴士：金桔（英文：kumquat）是著名的观果植物，果实金黄，具清香，盆栽金桔碧叶金丸，扶疏长荣，观赏价值极高。金桔一般嫁接种植，生长第一阶段为幼苗。</tip>
+<name>金桔</name>
+</crop>	
+		<crop id="75"   offsetX="0" offsetY="0" seed="Seed" harvestNum="5"  >
+<insect position="0,0,0,0,0,0|100,-50,78,-19,125,-30|100,-50,80,-24,125,-30|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="18000,39600,61200,86400,111600,2000000000" />
+<tip>小贴士：桑葚（英文：mulberry）又叫桑果、桑枣，味甜多汁，具有补肝益肾、生津润肠、乌发明目等功效。</tip>
+<name>桑葚</name>
+</crop>	
+		<crop id="76"   offsetX="0" offsetY="0" seed="Seed" harvestNum="5"  >
+<insect position="0,0,0,0,0,0|54,-12,80,-56,119,-20|54,-12,80,-56,119,-20|0,0,0,0,0,0" />
+<nextText value="幼苗,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="18000,39600,61200,86400,111600,2000000000" />
+<tip>小贴士：山竹（英文：mangosteen）有厚紫色外皮，果肉纯白，幽香气爽，滑润而不腻，与榴莲齐名，号称“果中皇后”。山竹一般嫁接种植，第一阶段为幼苗。</tip>
+<name>山竹</name>
+</crop>	
+		<crop id="77"   offsetX="0" offsetY="0" seed="Seed" harvestNum="5"  >
+<insect position="0,0,0,0,0,0|62,-5,89,-28,109,-6|62,-5,89,-28,109,-6|0,0,0,0,0,0" />
+<nextText value="幼苗,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="18000,39600,61200,86400,111600,2000000000" />
+<tip>小贴士：蓝莓（英文：blueberry）是一种小浆果，果实呈蓝色，色泽美丽、悦目，是许多点心与佳肴的成分之一。蓝莓一般扦插种植，生长第一阶段为幼苗。</tip>
+<name>蓝莓</name>
+</crop>	
+		<crop id="78"   offsetX="0" offsetY="0" seed="Seed" harvestNum="5"  >
+<insect position="0,0,0,0,0,0|54,-5,73,-45,109,-19|54,-5,73,-45,109,-19|0,0,0,0,0,0" />
+<nextText value="幼枝,发芽,开花,小叶子,大叶子,成熟,已成熟"/>
+<cropGrow value="18000,39600,61200,86400,111600,2000000000" />
+<tip>小贴士：杏子（英文：apricot）味道酸甜，具有很高的营养价值。杏子一般嫁接种植，且先花后叶，生长周期是：幼枝，发芽，开花，小叶子，大叶子，成熟。</tip>
+<name>杏子</name>
+</crop>	
+		<crop id="79"   offsetX="0" offsetY="0" seed="Seed" harvestNum="5"  >
+<insect position="0,0,0,0,0,0|57,-13,71,-42,104,-21|57,-13,71,-42,104,-21|0,0,0,0,0,0" />
+<nextText value="幼苗,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="18000,39600,61200,86400,111600,2000000000" />
+<tip>小贴士：番石榴（英文：guava）营养丰富，维生素C含量特高。果实具有治疗糖尿病及降血糖的药效，叶片也可治腹泻。番石榴一般嫁接种植，生长第一阶段为幼苗。</tip>
+<name>番石榴</name>
+</crop>	
+		<crop id="80"   offsetX="0" offsetY="0" seed="Seed" harvestNum="5"  >
+<insect position="0,0,0,0,0,0|100,-50,78,-19,125,-30|100,-50,80,-24,125,-30|0,0,0,0,0,0" />
+<nextText value="幼苗,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="18000,39600,61200,86400,111600,2000000000" />
+<tip>小贴士：月柿（英文：persimmon）俗称柿饼，以个大、形圆、肉厚、质软、味甜而享有盛誉。月柿一般嫁接种植，生长第一阶段为幼苗。</tip>
+<name>月柿</name>
+</crop>	
+		<crop id="81"   offsetX="0" offsetY="0" seed="Seed" harvestNum="1"  >
+<insect position="0,0,0,0,0,0|71,-13,85,-56,103,-28|71,-13,85,-56,103,-28|0,0,0,0,0,0" />
+<nextText value="幼枝,小叶子,大叶子,幼株,成树,装饰,已成熟"/>
+<cropGrow value="7200,14400,25200,36000,46800,2000000000" />
+<tip>圣诞树（英文：Christmas tree）是圣诞节庆祝中最有名的传统之一。QQ农场圣诞树专为圣诞活动装点，生长周期为：幼枝，小叶子，大叶子，幼株，成树，装饰。</tip>
+<name>圣诞树</name>
+</crop>	
+		<crop id="82"   offsetX="0" offsetY="0" seed="Seed" harvestNum="3"  >
+<insect position="0,0,0,0,0,0|54,-5,89,-44,116,-17|54,-5,89,-44,116,-17|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小枝,大枝,初熟,成熟,已成熟"/>
+<cropGrow value="18000,39600,75600,104400,133200,2000000000" />
+<tip>小贴士：传说中的摇钱树，在新年之际为农场用户带来祝福与好运，祝愿大家新的一年财源滚滚。</tip>
+<name>摇钱树</name>
+</crop>	
+		<crop id="83"   offsetX="0" offsetY="0" seed="Seed" harvestNum="5"  >
+<insect position="0,0,0,0,0,0|54,-5,98,-38,122,-10|54,-5,98,-38,122,-10|0,0,0,0,0,0" />
+<nextText value="幼枝,发芽,小叶子,大叶子,开花,结果,已成熟"/>
+<cropGrow value="21600,46800,64800,90000,118800,2000000000" />
+<tip>小贴士：红毛丹（英文：rambutan）又名毛荔枝，是热带多年生常绿乔木植物，也是著名的热带水果。红毛丹一般嫁接种植，生长第一阶段为幼枝。</tip>
+<name>红毛丹</name>
+</crop>	
+		<crop id="84"   offsetX="0" offsetY="0" seed="Seed" harvestNum="5"  >
+<insect position="0,0,0,0,0,0|60,-14,82,-38,116,-16|60,-14,82,-38,116,-16|0,0,0,0,0,0" />
+<nextText value="幼株,发芽,小叶子,大叶子,开花,结果,已成熟"/>
+<cropGrow value="21600,39600,57600,79200,104400,2000000000" />
+<tip>小贴士：芭蕉（英文：plantain）是多年生草本植物，叶子大而宽，喜温暖，耐寒力弱。芭蕉一般分株种植，生长第一阶段为幼株。</tip>
+<name>芭蕉</name>
+</crop>	
+		<crop id="85"   offsetX="0" offsetY="0" seed="Seed" harvestNum="6"  >
+<insect position="0,0,0,0,0,0|54,-14,90,-52,113,-19|54,-14,90,-52,113,-19|0,0,0,0,0,0" />
+<nextText value="幼枝,发芽,小叶子,大叶子,开花,结果,已成熟"/>
+<cropGrow value="18000,43200,64800,93600,111600,2000000000" />
+<tip>小贴士：番荔枝（英文：sweetsop）为热带水果，果实味道清甜，以其独特香味被列为热带名果之一。番荔枝一般嫁接种植，生长第一阶段为幼枝。</tip>
+<name>番荔枝</name>
+</crop>	
+		<crop id="86"   offsetX="0" offsetY="0" seed="Seed" harvestNum="6"  >
+<insect position="0,0,0,0,0,0|54,-14,81,-44,109,-26|54,-14,81,-44,109,-26|0,0,0,0,0,0" />
+<nextText value="幼苗,发芽,小叶子,大叶子,开花,结果,已成熟"/>
+<cropGrow value="21600,43200,61200,82800,108000,2000000000" />
+<tip>小贴士：橄榄（英文：olive）树姿优美，果实营养丰富，有“天堂之果”的美称。橄榄一般插苗种植，生长第一阶段为幼苗。</tip>
+<name>橄榄</name>
+</crop>	
+		<crop id="87"   offsetX="0" offsetY="0" seed="Seed" harvestNum="6"  >
+<insect position="0,0,0,0,0,0|53,-17,89,-55,120,-8|53,-17,89,-55,120,-8|0,0,0,0,0,0" />
+<nextText value="幼苗,发芽,小叶子,大叶子,开花,结果,已成熟"/>
+<cropGrow value="21600,43200,64800,86400,108000,2000000000" />
+<tip>小贴士：百香果（英文：passion fruit）俗称“巴西果”，果汁营养丰富，气味特别芳香，有“果汁之王”的美称。百香果一般插苗种植，生长第一阶段为幼苗。</tip>
+<name>百香果</name>
+</crop>	
+		<crop id="88"   offsetX="0" offsetY="0" seed="Seed" harvestNum="6"  >
+<insect position="0,0,0,0,0,0|100,-50,78,-19,125,-30|100,-50,80,-24,125,-30|0,0,0,0,0,0" />
+<nextText value="幼枝,发芽,小叶子,大叶子,开花,结果,已成熟"/>
+<cropGrow value="21600,39600,57600,79200,104400,2000000000" />
+<tip>小贴士：</tip>
+<name>灯笼果</name>
+</crop>	
+		<crop id="89"   offsetX="0" offsetY="0" seed="Seed" harvestNum="6"  >
+<insect position="0,0,0,0,0,0|100,-50,78,-19,125,-30|100,-50,80,-24,125,-30|0,0,0,0,0,0" />
+<nextText value="幼枝,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="21600,39600,57600,79200,104400,2000000000" />
+<tip>小贴士：</tip>
+<name>芦荟</name>
+</crop>	
+		<crop id="90"   offsetX="0" offsetY="0" seed="Seed" harvestNum="6"  >
+<insect position="0,0,0,0,0,0|100,-50,78,-19,125,-30|100,-50,80,-24,125,-30|0,0,0,0,0,0" />
+<nextText value="幼苗,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="21600,39600,57600,82800,108000,2000000000" />
+<tip>小贴士：</tip>
+<name>薄荷</name>
+</crop>	
+		<crop id="91"   offsetX="0" offsetY="0" seed="Seed" harvestNum="1"  >
+<insect position="0,0,0,0,0,0|100,-50,78,-19,125,-30|100,-50,80,-24,125,-30|0,0,0,0,0,0" />
+<nextText value="幼枝,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="10800,25200,43200,57600,79200,2000000000" />
+<tip>小贴士：</tip>
+<name>山楂</name>
+</crop>	
+		<crop id="92"   offsetX="0" offsetY="0" seed="Seed" harvestNum="4"  >
+<insect position="0,0,0,0,0,0|54,-5,87,-35,113,-13|54,-5,87,-35,113,-13|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟,已成熟"/>
+<cropGrow value="28800,61200,93600,129600,165600,2000000000" />
+<tip>小贴士：QQ浏览器专属“稀世琉璃果”，三千年一开花，三千年一结果，三千年才有一颗种子。</tip>
+<name>稀世琉璃果</name>
+</crop>	
+		<crop id="93"    seed="Seed" harvestNum="2"  >
+<insect position="0,0,0,0,0,0|64,-5,92,-22,120,-5|64,-5,92,-22,120,-5|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,开花,成熟"/>
+<cropGrow value="18000,36000,54000,72000,90000,2000000000" />
+<tip>小贴士：</tip>
+<name>炫舞之星</name>
+</crop>	
+		<crop id="94"    seed="Seed" harvestNum="2"  >
+<insect position="0,0,0,0,0,0|65,-17,95,-18,118,-39|58,-17,83,-41,118,-27|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,花蕾,盛开"/>
+<cropGrow value="18000,36000,54000,72000,90000,2000000000" />
+<tip>小贴士：</tip>
+<name>海洋之心</name>
+</crop>	
+		<crop id="299" isFlower="1"  offsetX="0" offsetY="0" seed="Seed" harvestNum="5"  >
+<insect position="0,0,0,0,0,0|100,-50,78,-19,125,-30|100,-50,80,-24,125,-30|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,花蕾,盛开,已成熟"/>
+<cropGrow value="18000,39600,61200,86400,111600,2000000000" />
+<tip>小贴士：</tip>
+<name>红种子z</name>
+</crop>	
+		<crop id="101" isFlower="1"  offsetX="0" offsetY="0" seed="Seed" harvestNum="3"  >
+<insect position="0,0,0,0,0,0|68,5,94,-27,113,-9|68,5,94,-27,113,-9|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,花蕾,盛开,已成熟"/>
+<cropGrow value="39600,82800,126000,172800,219600,2000000000" />
+<tip>小贴士：薰衣草(英文：lavender)是一种馥郁的紫蓝色小花。这种小花就像起源地普鲁旺斯具有浪漫的情怀，花语是等待爱情的奇迹。</tip>
+<name>薰衣草</name>
+</crop>	
+		<crop id="102" isFlower="1"  offsetX="0" offsetY="0" seed="Seed" harvestNum="3"  >
+<insect position="0,0,0,0,0,0|54,-2,75,-32,116,-3|54,-2,75,-32,116,-3|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,花蕾,盛开,已成熟"/>
+<cropGrow value="43200,90000,136800,183600,230400,2000000000" />
+<tip>小贴士：马蹄莲(英文：calla)清雅美丽，它的花语是“忠贞不渝,永结同心”。 代表纯洁无暇的爱，高贵，永恒。</tip>
+<name>马蹄莲</name>
+</crop>	
+		<crop id="103" isFlower="1"  offsetX="0" offsetY="0" seed="Seed" harvestNum="1"  >
+<insect position="0,0,0,0,0,0|54,-2,75,-32,116,-3|54,-2,75,-32,116,-3|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,花蕾,盛开,已成熟"/>
+<cropGrow value="10800,25200,39600,54000,72000,2000000000" />
+<tip>小贴士：天香百合(英文：goldband lily)有着百年好合的美好寓意，代表高贵，优雅，祝福和心想事成。</tip>
+<name>天香百合</name>
+</crop>	
+		<crop id="104" isFlower="1"  offsetX="0" offsetY="0" seed="Seed" harvestNum="2"  >
+<insect position="0,0,0,0,0,0|52,22,84,-3,113,21|52,22,84,-3,113,21|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,花蕾,盛开,已成熟"/>
+<cropGrow value="14400,28800,43200,57600,75600,2000000000" />
+<tip>小贴士：非洲菊(英文：African daisy)又叫扶郎花，清雅、高洁、隐逸。它的花语是永远快乐，热情和神秘。</tip>
+<name>非洲菊</name>
+</crop>	
+		<crop id="105" isFlower="1"  offsetX="0" offsetY="0" seed="Seed" harvestNum="1"  >
+<insect position="0,0,0,0,0,0|68,5,94,-27,113,-9|68,5,94,-27,113,-9|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,花蕾,盛开,已成熟"/>
+<cropGrow value="7200,18000,32400,46800,61200,2000000000" />
+<tip>小贴士：小雏菊(英文：daisy)有三个花语，第一是永远的快乐，第二是暗恋，第三是离别，小雏菊也代表无邪和天真。</tip>
+<name>小雏菊</name>
+</crop>	
+		<crop id="106" isFlower="1"  offsetX="0" offsetY="0" seed="Seed" harvestNum="3"  >
+<insect position="0,0,0,0,0,0|53,1,81,-15,115,5|53,1,81,-15,115,5|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,花蕾,盛开,已成熟"/>
+<cropGrow value="36000,72000,108000,147600,187200,2000000000" />
+<tip>小贴士：郁金香(英文：tulip)是荷兰的国花，它花色繁多，色彩丰润、艳丽。郁金香花语是：博爱、体贴、高雅、富贵、能干、聪颖。</tip>
+<name>郁金香</name>
+</crop>	
+		<crop id="107" isFlower="1"  offsetX="0" offsetY="0" seed="Seed" harvestNum="4"  >
+<insect position="0,0,0,0,0,0|53,-7,86,-48,112,-9|53,-7,86,-48,112,-9|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,花蕾,盛开,已成熟"/>
+<cropGrow value="21600,43200,64800,90000,115200,2000000000" />
+<tip>小贴士：仙人掌(英文：cactus)为肉质多年生植物，多生活在干燥地区。仙人掌拥有外刚内柔之心，花语是：坚强。</tip>
+<name>仙人掌</name>
+</crop>	
+		<crop id="108" isFlower="1"  offsetX="0" offsetY="0" seed="Seed" harvestNum="4"  >
+<insect position="0,0,0,0,0,0|49,3,64,-27,108,-2|43,-3,64,-35,112,-9|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,花蕾,盛开,已成熟"/>
+<cropGrow value="21600,43200,64800,90000,115200,2000000000" />
+<tip>小贴士：铃兰(英文：lily of the valley)株形小巧，花香怡人，花为小型钟状花。铃兰花语是：纯洁、幸福的到来、吉祥和好运。</tip>
+<name>铃兰</name>
+</crop>	
+		<crop id="109" isFlower="1"  offsetX="0" offsetY="0" seed="Seed" harvestNum="3"  >
+<insect position="0,0,0,0,0,0|60,16,87,-5,122,14|60,16,87,-5,122,14|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,花蕾,盛开,已成熟"/>
+<cropGrow value="43200,90000,136800,183600,230400,2000000000" />
+<tip>小贴士：蝴蝶兰(英文：moth orchid)因花形似蝴蝶而得名，花姿婀娜，花色高雅繁多。蝴蝶兰花语是：我爱你、幸福向你飞来。</tip>
+<name>蝴蝶兰</name>
+</crop>	
+		<crop id="110" isFlower="1"  offsetX="0" offsetY="0" seed="Seed" harvestNum="1"  >
+<insect position="0,0,0,0,0,0|100,-50,78,-19,125,-30|100,-50,80,-24,125,-30|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,花蕾,盛开,已成熟"/>
+<cropGrow value="10800,25200,43200,61200,79200,2000000000" />
+<tip>小贴士：</tip>
+<name>满天星</name>
+</crop>	
+		<crop id="111" isFlower="1"  offsetX="0" offsetY="0" seed="Seed" harvestNum="2"  >
+<insect position="0,0,0,0,0,0|48,-8,77,-31,114,-18|48,-8,77,-31,114,-18|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,花蕾,盛开,已成熟"/>
+<cropGrow value="14400,32400,54000,75600,100800,2000000000" />
+<tip>小贴士：粉玫瑰（英文：pink rose）花呈浅粉红色，花语是“喜欢你那灿烂的微笑”，同时还代表“初恋”。</tip>
+<name>粉玫瑰</name>
+</crop>	
+		<crop id="112" isFlower="1"  offsetX="0" offsetY="0" seed="Seed" harvestNum="2"  >
+<insect position="0,0,0,0,0,0|67,3,84,-12,113,-3|59,-9,85,-31,114,-13|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,花蕾,盛开,已成熟"/>
+<cropGrow value="18000,39600,61200,86400,111600,2000000000" />
+<tip>小贴士：风信子（英文：hyacinth）花序端庄，花色丰富，花姿美丽，花语为“只要点燃生命之火，便可同享丰盛人生”。 </tip>
+<name>风信子</name>
+</crop>	
+		<crop id="113" isFlower="1"  offsetX="0" offsetY="0" seed="Seed" harvestNum="3"  >
+<insect position="0,0,0,0,0,0|59,12,85,-18,108,6|59,12,85,-18,108,6|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,花蕾,盛开,已成熟"/>
+<cropGrow value="25200,50400,75600,104400,133200,2000000000" />
+<tip>小贴士：栀子花（英文：gardenia）绿叶白花，芳香素雅，花语是“永恒的爱与约定”，也有人把栀子花的花语定为“喜悦”。</tip>
+<name>栀子花</name>
+</crop>	
+		<crop id="114" isFlower="1"  offsetX="0" offsetY="0" seed="Seed" harvestNum="4"  >
+<insect position="0,0,0,0,0,0|53,3,76,-36,109,-10|53,3,76,-36,109,-10|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,花蕾,盛开,已成熟"/>
+<cropGrow value="28800,57600,86400,118800,151200,2000000000" />
+<tip>小贴士：蓝玫瑰（英文：blue rose）色彩华贵，是玫瑰花中的新贵，让人着迷，其花语代表“清纯的爱和敦厚善良”。</tip>
+<name>蓝玫瑰</name>
+</crop>	
+		<crop id="115" isFlower="1"  offsetX="0" offsetY="0" seed="Seed" harvestNum="4"  >
+<insect position="0,0,0,0,0,0|100,-50,78,-19,125,-30|100,-50,80,-24,125,-30|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,花蕾,盛开,已成熟"/>
+<cropGrow value="28800,57600,86400,118800,151200,2000000000" />
+<tip>小贴士：</tip>
+<name>兰花</name>
+</crop>	
+		<crop id="116" isFlower="1"  offsetX="0" offsetY="0" seed="Seed" harvestNum="5"  >
+<insect position="0,0,0,0,0,0|100,-50,78,-19,125,-30|100,-50,80,-24,125,-30|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,花蕾,盛开,已成熟"/>
+<cropGrow value="18000,39600,61200,86400,111600,2000000000" />
+<tip>小贴士：</tip>
+<name>曼陀罗华</name>
+</crop>	
+		<crop id="117" isFlower="1"  offsetX="0" offsetY="0" seed="Seed" harvestNum="5"  >
+<insect position="0,0,0,0,0,0|100,-50,78,-19,125,-30|100,-50,80,-24,125,-30|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,花蕾,盛开,已成熟"/>
+<cropGrow value="18000,39600,61200,86400,111600,2000000000" />
+<tip>小贴士：</tip>
+<name>康乃馨</name>
+</crop>	
+		<crop id="118" isFlower="1"  offsetX="0" offsetY="0" seed="Seed" harvestNum="2"  >
+<insect position="0,0,0,0,0,0|67,-2,85,-38,97,-14|67,-2,85,-38,97,-14|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,花蕾,盛开,已成熟"/>
+<cropGrow value="18000,39600,61200,86400,111600,2000000000" />
+<tip>小贴士：水仙花（英文：narcissus）为我国十大名花之一，花朵秀丽，清香典雅，在过年象征“思念”，表示团圆，花语是“敬意”。</tip>
+<name>水仙花</name>
+</crop>	
+		<crop id="119" isFlower="1"  offsetX="0" offsetY="0" seed="Seed" harvestNum="5"  >
+<insect position="0,0,0,0,0,0|100,-50,78,-19,125,-30|100,-50,80,-24,125,-30|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,花蕾,盛开,已成熟"/>
+<cropGrow value="18000,39600,61200,86400,111600,2000000000" />
+<tip>小贴士：</tip>
+<name>紫罗兰</name>
+</crop>	
+		<crop id="120" isFlower="1"  offsetX="0" offsetY="0" seed="Seed" harvestNum="1"  >
+<insect position="0,0,0,0,0,0|100,-50,78,-19,125,-30|100,-50,80,-24,125,-30|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,花蕾,盛开,已成熟"/>
+<cropGrow value="7200,18000,28800,43200,57600,2000000000" />
+<tip>小贴士：</tip>
+<name>蒲公英</name>
+</crop>	
+		<crop id="121" isFlower="1"  offsetX="0" offsetY="0" seed="Seed" harvestNum="3"  >
+<insect position="0,0,0,0,0,0|100,-50,78,-19,125,-30|100,-50,80,-24,125,-30|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,花蕾,盛开,已成熟"/>
+<cropGrow value="28800,61200,93600,129600,165600,2000000000" />
+<tip>小贴士：</tip>
+<name>蔷薇</name>
+</crop>	
+		<crop id="122" isFlower="1"  offsetX="0" offsetY="0" seed="Seed" harvestNum="2"  >
+<insect position="0,0,0,0,0,0|100,-50,78,-19,125,-30|100,-50,80,-24,125,-30|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,花蕾,盛开,已成熟"/>
+<cropGrow value="18000,39600,61200,86400,111600,2000000000" />
+<tip>小贴士：</tip>
+<name>丁香花</name>
+</crop>	
+		<crop id="123" isFlower="1"  offsetX="0" offsetY="0" seed="Seed" harvestNum="4"  >
+<insect position="0,0,0,0,0,0|100,-50,78,-19,125,-30|100,-50,80,-24,125,-30|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,花蕾,盛开,已成熟"/>
+<cropGrow value="54000,108000,165600,219600,277200,2000000000" />
+<tip>小贴士：</tip>
+<name>海棠花</name>
+</crop>	
+		<crop id="124" isFlower="1"  offsetX="0" offsetY="0" seed="Seed" harvestNum="4"  >
+<insect position="0,0,0,0,0,0|100,-50,78,-19,125,-30|100,-50,80,-24,125,-30|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,花蕾,盛开,已成熟"/>
+<cropGrow value="21600,43200,64800,90000,115200,2000000000" />
+<tip>小贴士：</tip>
+<name>月季花</name>
+</crop>	
+		<crop id="125" isFlower="1"  offsetX="0" offsetY="0" seed="Seed" harvestNum="5"  >
+<insect position="0,0,0,0,0,0|59,6,86,-26,116,-2|59,6,86,-26,116,-2|0,0,0,0,0,0" />
+<nextText value="种子,发芽,小叶子,大叶子,花蕾,盛开,已成熟"/>
+<cropGrow value="18000,39600,61200,86400,111600,2000000000" />
+<tip>小贴士：太阳花（英文：heronsbill）花色丰富、色彩鲜艳，喜欢生长在阳光充足的环境，是非常优秀的景观花种。</tip>
+<name>太阳花</name>
+</crop>	
+		
+</crops>
+</main>

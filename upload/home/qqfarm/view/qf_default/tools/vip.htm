@@ -1,0 +1,62 @@
+<!--{tpl header}-->
+
+<div id="main">
+	<div class="clearfix">
+		<div class="vip_info">
+			<p class="choose">您当前的VIP等级：<b>{:$vipExt['level']}</b>级</p>
+			<p class="choose">VIP经验：<b>{:$vip['exp']}</b>点</p>
+			<p class="choose">成长速度：<b>{:$vipSpeed[$vip['status']]}</b>点/天</p>
+			<p class="choose">您当前的VIP状态：<b>{:$vipExt['status']}</b></p>
+			<p class="choose">VIP会员到期时间：<b>{:$vipExt['valid']}</b></p>
+		</div>
+		<div class="vip_exp">
+			<p class="choose">成长情况：</p>
+			<div class="vip_exp_signs">
+				<div class="item{:$vip[status]}" style="left:2px;" title="经验值：{:$vipExps[1]}"><span>1</span></div>
+				<div class="item{:$vip[status]}" style="left:{:round($vipExps[2]/$vipExps[7]*90)}%;" title="经验值：{:$vipExps[2]}"><span>2</span></div>
+				<div class="item{:$vip[status]}" style="left:{:round($vipExps[3]/$vipExps[7]*90)}%;" title="经验值：{:$vipExps[3]}"><span>3</span></div>
+				<div class="item{:$vip[status]}" style="left:{:round($vipExps[4]/$vipExps[7]*90)}%;" title="经验值：{:$vipExps[4]}"><span>4</span></div>
+				<div class="item{:$vip[status]}" style="left:{:round($vipExps[5]/$vipExps[7]*90)}%;" title="经验值：{:$vipExps[5]}"><span>5</span></div>
+				<div class="item{:$vip[status]}" style="left:{:round($vipExps[6]/$vipExps[7]*90)}%;" title="经验值：{:$vipExps[6]}"><span>6</span></div>
+				<div class="item{:$vip[status]}" style="left:90%;" title="经验值：{:$vipExps[7]}"><span>7</span></div>
+			</div>
+			<div class="vip_exp_line clearfix">
+				<div class="l{:$vip[status]}"></div>
+				<div class="c{:$vip[status]} clearfix" title="经验值(已转化/可转化)：{:$vip['exp']}/{:$vipExt['allExp']}">
+					<div class="m{:$vip[status]}" style="width:{:round($vip['exp']/$vipExps[7]*90)}%;"></div>
+				</div>
+				<div class="r{:$vip[status]}"></div>
+			</div>
+			<p class="choose">月付费会员的成长速度是{:$vipSpeed[1]}点/天</p>
+			<p class="choose">年付费会员的成长速度是{:$vipSpeed[2]}点/天</p>
+		</div>
+	</div>
+	<form id="vip_pay" onsubmit="return submits();">
+		<dl class="clearfix">
+			<dt class="choose">请选择开通VIP服务类型：</dt>
+			<dd><input type="radio" name="payMonth" value="1" OnClick="ShowPayMsg(this);" />一个月</dd>
+			<dd><input type="radio" name="payMonth" value="3" OnClick="ShowPayMsg(this);" />三个月</dd>
+			<dd><input type="radio" name="payMonth" value="6" OnClick="ShowPayMsg(this);" />六个月</dd>
+			<dd><input type="radio" name="payMonth" value="12" OnClick="ShowPayMsg(this);" checked="true" />一年(<font color=red>推荐</font>)</dd>
+			<dd id="paymsg">【共需花费<font color=red>{:$vipCost[2]}</font>Y币,节省<font color=red>{:$vipCost[1]*12-$vipCost[2]}</font>Y币】</dd>
+		</dl>
+		<div class='doPay'><input type="submit" value="确定支付" /> <span id="showmsg"></span></div>
+	</form>
+</div>
+
+<script type="text/javascript">
+function ShowPayMsg(o) {
+	if(o.value == 12) {
+		$('#paymsg').innerHTML = "【共需花费<font color=red>{:$vipCost[2]}</font>Y币,节省<font color=red>{:$vipCost[1]*12-$vipCost[2]}</font>Y币】";
+	}
+	else {
+		$('#paymsg').innerHTML = "【共需花费<font color=red>"+o.value*{:$vipCost[1]}+"</font>Y币】";
+	}
+}
+function submits() {
+	request('tools.php?mod=vip', 'showmsg', $.getForm('#vip_pay', 1));
+	return false;
+}
+</script>
+
+<!--{tpl footer}-->

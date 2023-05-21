@@ -1,0 +1,19 @@
+<!--{tpl header}-->
+
+<div id="main">
+	<p>
+		<p>使用本站积分兑换，10个积分兑换 1个Y币</p>
+		请输入要兑换的Y币个数：<input type='text' id='yb' size='15' />
+		<input type="button" onclick='request("tools.php?mod=exchange&do=save&type=yb&number="+SQuery("#yb").value, "state1");' value='确定兑换' />
+		<span id="state1"></span>
+	</p>
+	<br />
+	<p>
+		<p>使用本站积分兑换，1个积分兑换 100金币</p>
+		请输入要兑换的金币数：<input type='text' id='jb' size='15' /> x100
+		<input type="button" onclick='request("tools.php?mod=exchange&do=save&type=jb&number="+SQuery("#jb").value, "state2");' value='确定兑换' />
+		<span id="state2"></span>
+	</p>
+</div>
+
+<!--{tpl footer}-->

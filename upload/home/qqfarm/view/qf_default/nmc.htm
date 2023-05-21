@@ -1,0 +1,261 @@
+<!--{tpl header}-->
+
+<div id="main_nmc">
+	<div id="mync"></div>
+	<div id="mymc" style="display:none;"></div>
+</div>
+
+<div id="getflashplayer" style="display:none;">
+	<div style="text-align:center;padding-top:150px;">
+		<h1>请下载最新的Flash插件</h1>
+		<img 
+		onclick="var mywindow = window.parent || window; mywindow.location.href = 'http://www.adobe.com/go/getflashplayer'" 
+		style="border:0;cursor:pointer;" alt="下载最新的Flash插件" src="images/get_flash_player.gif" 
+		/>
+	</div>
+</div>
+
+<script type="text/javascript" src="script.php?swfobject"></script>
+<script type="text/javascript">
+	//当前模块
+	var curModule = 'nc';
+
+	/**
+	 * @return (String) 返回图片上传地址
+	 */
+	function getUploadUrl() {
+		$("#my"+curModule).setUploadUrl('interface/savepic.php');
+		return 0;
+	}
+
+	/**
+	 * SWF链接代理
+	 * @param (String) methodName 呼叫的方法名称
+	 * @param (Object) arg 需要给方法传递的参数（可以不填写）
+	 * @param (String) module 需要调用哪个Flash的方法（'nc'表示农场，'mc'表示牧场；可以不填写）
+	 * @return (*) 如果函数有返回则返回函数返回的结果，无则返回null
+	 */
+	function connectSWF(methodName, arg, module) {
+		module = module || curModule;
+		if(arg) {
+			return $("#my"+module)[methodName](arg) || null;
+		}
+		else {
+			return $("#my"+module)[methodName]();
+		}
+	}
+
+	/**
+	 * @return (Object) 返回Flash对象
+	 */
+	function findSWF(id) {
+		var element = window[id] || document[id];
+		return element;
+	}
+
+	/**
+	 * 送花选择好友
+	 */
+	function flowerToPickFriend() {
+		try { window.parent.dlBox2_Show(); }
+		catch(error) {}
+	}
+
+	/**
+	 * 切换农场牧场::获取flash变量
+	 * @param (String) module 模式的名称（nc 表示农场，mc表示牧场）
+	 * @return (Object) 返回flash变量集合
+	 */
+	function getflashvars(module) {
+		return {
+			api_activeitem:"",
+			api_allinfo:"",
+			api_buyseed:"",
+			api_buytool:"",
+			api_chat:"",
+			api_chat_from:1000,
+			api_chat_to:1000,
+			api_clearchat:"",
+			api_clearlog:"",
+			api_deactiveitem:"",
+			api_feedmoney:"",
+			api_friend:"",
+			api_friend_from:0,
+			api_friend_to:999,
+			api_friendStatus:"",
+			api_friendStatus_from:1000,
+			api_friendStatus_to:1000,
+			api_g1_from:0,
+			api_g1_to:999,
+			api_g10_from:0,
+			api_g10_to:999,
+			api_g2_from:0,
+			api_g2_to:999,
+			api_g3_from:0,
+			api_g3_to:999,
+			api_g4_from:0,
+			api_g4_to:999,
+			api_g5_from:0,
+			api_g5_to:999,
+			api_g6_from:0,
+			api_g6_to:999,
+			api_g7_from:0,
+			api_g7_to:999,
+			api_g8_from:0,
+			api_g8_to:999,
+			api_g9_from:0,
+			api_g9_to:999,
+			api_getpackage:"",
+			api_getpackage_from:0,
+			api_getpackage_to:999,
+			api_getpackagelist:"",
+			api_getpackagelist_from:0,
+			api_getpackagelist_to:999,
+			api_gettools:"",
+			api_health:"",
+			api_health_from:0,
+			api_health_to:999,
+			api_item:"",
+			api_item_buy:"",
+			api_item_from:1000,
+			api_item_shop:"",
+			api_item_to:1000,
+			api_levelup:"",
+			api_listFilter:"",
+			api_listFilter_from:1000,
+			api_listFilter_to:1000,
+			api_notice:"",
+			api_reclaim:"",
+			api_reclaimpay:"",
+			api_repertory:"",
+			api_repertory_from:1000,
+			api_repertory_to:1000,
+			api_seedinfo:"",
+			api_sendchat:"",
+			api_task_accept:"",
+			api_task_run:"",
+			api_task_update:"",
+			api_user:"",
+			api_user_from:1000,
+			api_user_to:1000,
+			api_useritems:"",
+			api_userseed:"",
+			api_welcome:"",
+			app_key:"",
+			autoStatus:1,
+			batchStealHour:"0-11,12-23", //默认使用一键摘取的时间段
+			buyToolHour:"9-22",
+			buyToolTips:"寒冬来临，化肥供应紧张，目前暂不能购买化肥",
+			cacheDiy:6,
+			cacheSeed:20,
+			domian:"",
+			enter_into:"",
+			enter_into_mod:1000,
+			flowerDayTips:"用户在内测期间,可赠送鲜花！",
+			flowerYDLevel:-1, //开放送花功能的用户最低VIP级别[-1,1-7]
+			filterLV:0,
+			filterUrl:"",
+			friend_list:"",
+			friend_list_mod:1000,
+			friend_list_tips:"系统繁忙，请稍后再试！",
+			healthModeTime:"00:00 - 06:00",
+			hmv2CloseTime:1261929600,
+			hmv2level:0,
+			loading:"module/loading_v_13.swf",
+			miniFactory:2,
+			miniFactoryText:"神秘的魔法师又来了，这次他又会用什么神奇的魔法把作物变成化肥呢？<font color='#F47600'>红玫瑰 5个 %2B 便便 5个 %2B 金币 1000 %3D 1袋极速化肥</font><br/>赶紧试试吧！他会在农场逗留到3月31日！",
+			missionTitle:"{:$mission[Title]}",
+			missionPrepareTime:"{:$mission[PrepareTime]}",
+			missionBeginTime:"{:$mission[BeginTime]}",
+			missionEndTime:"{:$mission[EndTime]}",
+			missionPrepareHtml:"{:$mission[PrepareHtml]}",
+			missionBeginHtml:"{:$mission[BeginHtml]}",
+			mode:"",
+			module:module,
+			noFoodTips:"寒冬来临，狗粮运输困难，目前暂不能购买狗粮。",
+			pasture_animal:"1001-1002",
+			pasture_animal_mode:1000,
+			pasture_enter:"1001-1002",
+			pasture_enter_mod:1000,
+			pasture_enter_tips:"为保证更加稳定的服务，系统正在进行分号段数据维护。在此时间段系统将暂时关闭牧场以保护您的数据安全。感谢您的理解与支持！",
+			pasture_friend_list:"1001-1002",
+			pasture_friend_list_mod:1000,
+			pasture_friend_list_tips:"系统繁忙，请稍后再试！",
+			pasture_item:"1001-1002",
+			pasture_item_mode:1000,
+			pasture_recover:"",
+			pasture_steal:"1001-1002",
+			pasture_steal_mod:1000,
+			pasture_steal_tips:"为保证更加稳定的服务，系统正在进行分号段数据维护。在此时间段系统将暂停 “收取”操作以保护您的数据安全。感谢您的理解与支持！",
+			pasture_user:"1001-1002",
+			pasture_user_mode:1000,
+			phpini:"module/nc_ini.xml?v=23",
+			phpini2:"module/mc_ini.xml?v=21",
+			recover:"",
+			redirect_url:"",
+			reqYellowlevel:1,
+			ShopHeadLink:"农场牧场|http://code.google.com/p/qfarm/",
+			ShopToolLink:"",
+			snowslide:3,
+			steal:"",
+			steal_mod:1000,
+			steal_tips:"为保证更加稳定的服务，系统正在对部分号码进行数据维护。在此时间段系统将暂停您的 “摘取”操作以保护您的数据安全。期间好友也不能摘取您的作物，其他操作正常！谢谢您的支持！",
+			steal_tips_other:"为保证更加稳定的服务，系统正在对部分号码进行数据维护。在此号段的农场在维护期间将停止摘取以保护数据安全。期间好友也不能摘取您的作物，其他操作正常！谢谢您的支持！",
+			uinMode:1,
+			user:"1001-1002",
+			user_mode:1000
+		};
+	}
+
+	/**
+	 * 切换农场牧场::主函数
+	 * @param (String) module 模式的名称（nc 表示农场，mc表示牧场）
+	 */
+	var switchfarm = $("#mync") ? function(module) {
+		//动态创建Flash对象
+		if($("#my"+module).tagName.toLowerCase() == 'div') {
+			var flashDir = "";
+			swfobject.embedSWF(
+				"module/qqfarm.swf?v=1016", 
+				("my"+module), 
+				"100%", 
+				"560", 
+				"9.0.124", 
+				"view/js/swfobject/expressInstall.swf",
+				getflashvars(module),
+				{
+					base: flashDir,
+					allowScriptAccess: "always",
+					wmode: "opaque"
+				},
+				{
+					"MredirectURL": "#"
+				},
+				function(e) {
+					if(!e.success) {
+						$("#my"+module).innerHTML = $("#getflashplayer").innerHTML;
+					}
+				}
+			);
+		}
+		//切换显示层
+		if(module == 'nc') {
+			$("#mync").style.position = "static";
+			$("#mymc").style.height = "0px";
+			$("#mync").style.height = "560px";
+		}
+		else {
+			$("#mync").style.position = "absolute";
+			$("#mync").style.height = "0px";
+			$("#mymc").style.height = "560px";
+		}
+		//更新全局变量
+		curModule = module;
+	} : function(){};
+
+	//尝试加载模块
+	try { switchfarm(curModule); }
+	catch(error) {}
+</script>
+
+<!--{tpl footer}-->

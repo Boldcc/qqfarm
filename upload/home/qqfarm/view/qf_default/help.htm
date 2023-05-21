@@ -1,0 +1,20 @@
+<!--{tpl header}-->
+
+<div id="main">
+	<div class="menu">
+		<!--{php $actives[$type] = ' class="actives"';}-->
+		<a{:$actives[nc]} href="index.php?mod=help&type=nc">农场手册</a>
+		<a{:$actives[mc]} href="index.php?mod=help&type=mc">牧场手册</a>
+	</div>
+	<div id="help_tabs"></div>
+	<dl id="help_content"></dl>
+</div>
+
+<script type="text/javascript" src="script.php?info_{:$type}&help"></script>
+<script type="text/javascript">
+	generateTabs();
+	tabs[0].style.fontWeight = 'bold';
+	generateContent(0);
+</script>
+
+<!--{tpl footer}-->

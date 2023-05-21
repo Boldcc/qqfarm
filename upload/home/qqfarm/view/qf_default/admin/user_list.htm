@@ -1,0 +1,49 @@
+<!--{tpl admin/header}-->
+
+<!--{if $qqfarm_config_list}-->
+<div class="user_list">
+	<table width="100%" cellpadding=5 cellspacing=0>
+		<tr>
+			<th>ID</th><th>用户名(UID)</th><th>Y币数量</th><th>金币数量</th><th>VIP经验</th><th>VIP级别</th>
+			<th>农田数目</th><th>农场经验</th><th>农场级别</th><th>牧场经验</th><th>牧场级别</th><th>执行操作</th>
+		</tr>
+		<!--{foreach $qqfarm_config_list as $key=>$value}-->
+		<tr>
+			<td>{:$value[id]}</td>
+			<td>{:$value[username]}({:$value[uid]})</td>
+			<td>{:$value[YB]}</td>
+			<td>{:$value[money]}</td>
+			<td>{:$value[vip][exp]}</td>
+			<td>{:$value[vip][level]}级</td>
+			<td>{:$value[reclaim]}</td>
+			<td>{:$value[exp_nc]}</td>
+			<td>{:$value[level_nc]}级</td>
+			<td>{:$value[exp_mc]}</td>
+			<td>{:$value[level_mc]}级</td>
+			<td>
+				<a href="admin.php?mod=user_edit&id={:$value[uid]}">编辑</a>
+				&nbsp;
+				<a href='javascript:delUser("{:$value[uid]}","确定要删除 {:$value[username]} 的农牧场吗?");'>删除</a>
+			</td>
+		</tr>
+		<!--{/foreach}-->
+	</table>
+</div>
+<div id="pages" class="multiPage"></div>
+<!--{else}-->
+<div class="no_hpinfo">暂时没有用户信息！</div>
+<!--{/if}-->
+
+<script type="text/javascript">
+	$('#pages').innerHTML = multiPage({pid:"{:$pid}",purl:"{:$purl}",psize:"{:$psize}",count:"{:$count}"});
+	function delUser(uid, msg) {
+		if(confirm(msg)) {
+			request(
+				'admin.php?mod=user_delete&id='+uid, null, null, 
+				function(data){ alert(data[1]); }
+			);
+		}
+	}
+</script>
+
+<!--{tpl admin/footer}-->
